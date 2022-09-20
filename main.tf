@@ -16,3 +16,10 @@ module "custom_instance" {
     source = "./awsinstance"
     ami_id = "${var.toplevel_amiid}"
 }
+
+module "db_instance" {
+    source = "./awsinstance"
+    ami_id = "${var.toplevel_amiid}"
+    eph_block_size = "${var.toplevel_block_size}"
+    inst_type = "${var.toplevel_inst_type}"
+}
