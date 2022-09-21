@@ -11,7 +11,7 @@ variable "toplevel_inst_type" {
 }
 
 variable "topkey" {
-  default = "key_name"
+  default = "example_key"
 }
 
 variable "topsec" {
