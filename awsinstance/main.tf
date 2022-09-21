@@ -4,5 +4,4 @@ resource "aws_instance" "tf-instance" {
   key_name      = "22Julyenable1-Lon"
   security_groups = ["AutoScaling-Security-Group-1"]
   root_block_device { volume_size = "${var.eph_block_size}"}
-  
   }
